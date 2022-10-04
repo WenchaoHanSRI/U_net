@@ -3,12 +3,13 @@
 The repository is specifically build for a task for personal pupose. The model is trained for semantic segmentation for retinal fundus images.
 Feel free to play/modify the code for your own purpose.
 
+- [Description](#description)
 - [Quick start](#quick-start)
   - [Data](#data)
   - [Without Docker](#without-docker) 
   - [With Docker](#with-docker)
 - [Train](#Train)
-- [Description](#description)
+
 - [Usage](#usage)
   - [Docker](#docker)
   - [Training](#training)
@@ -16,6 +17,14 @@ Feel free to play/modify the code for your own purpose.
 - [Weights & Biases](#weights--biases)
 - [Pretrained model](#pretrained-model)
 
+## Description
+This package is a U-net package for semantic segmentaiton for the retinal dataset. This code is modified from the git repository: (https://github.com/milesial/Pytorch-UNet)
+The modifications details are below:
+1. Fixed the bug in the dataloader to load the 24-bit mask properly. 
+2. Added color autmentation on top of the original code for training. Specifically added color augmentation as the retinal fundus images varies largely in brightness, contrast, and hue. The rotation augmentation did not implemented yet. Please note: do not implment geometric augmentation directly in the transform funtion, this will not apply to masks. I will update this function later.
+3. Added random corpping specifically for my purpose of training. The trained model can directly used for inferencing for the full size image. I need to train the model at full resolution as the vessel structure is very thin. The original code downsampled images, which does not apply to my case. The user can still use the scale parameter to downsample the image.
+4. Reimplemented the validation function with four more error metrics. The predict.py function in the original package has bugs which I do not have time to fix. 
+5. A note book file is created using google Colab. Please make sure you have more than 2G free space to run the code in Colab as it will automatically download the dataset to the clouse drive. 
 
 
 ## Quick start
@@ -64,7 +73,7 @@ python train_cropsize.py -d=cuda:0 -cz=512 -scale=1 -e=15 -b=4
 This is one example code that I used to train my model. If you do not have large enough GPU memory, you may reduce the batch size (e.g. -b=2), or you may reduce the crop size (e.g. -cz=256). However, the model may not have the same performance. 
 The user can also use help arguement to check all the argments available for this training function.
 
-## Description
+
 
 
 ## Usage
