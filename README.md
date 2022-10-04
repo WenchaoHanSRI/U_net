@@ -39,14 +39,14 @@ Two sample images are placed in the folder already, you can place more images of
 3. Download the pre-trained model and put the model in the master directory:(https://figshare.com/ndownloader/files/34969398)
 
 
-3. Download the data and run inferencing:
+4. Download the data and run inferencing:
 ```bash
 python validate.py
 ```
 The user should expect a link print out from the command window, which brings to the Weights&Biases website and you can review your results there.
 
 
-4. Alternatively, user can run without wandb module (i.e. Weights&Biases):
+5. Alternatively, user can run without wandb module (i.e. Weights&Biases):
 ```bash
 python validate_folder.py
 ```
