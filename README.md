@@ -36,7 +36,7 @@ pip install -r requirements.txt
 '/data/testimgsall' and corresponding masks in '/data/testmasksall' to perform segmentation. 
 Two sample images are placed in the folder already, you can place more images of the downloaded data in the same folder.
 
-3. Download the pre-trained model and put the model in the master directory:(https://figshare.com/ndownloader/files/34969398)
+3. Download the pre-trained model and put the model in the master directory:([https://figshare.com/ndownloader/files/34969398](https://drive.google.com/file/d/18jRivGhFium-URAhMMHTV-js-MsBUMzR/view?usp=sharing))
 
 
 4. Download the data and run inferencing:
