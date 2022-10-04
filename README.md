@@ -7,6 +7,7 @@ Feel free to play/modify the code for your own purpose.
   - [Data](#data)
   - [Without Docker](#without-docker) 
   - [With Docker](#with-docker)
+- [Train](#Train)
 - [Description](#description)
 - [Usage](#usage)
   - [Docker](#docker)
@@ -53,7 +54,15 @@ python validate_folder.py
 The mean error metrics will be printed out in the command window, and the predicted mask image will save in the 'prediction' folder, which will be automatically created.
 
 ### With Docker
+The user can also download the Docker image file to run the 'validation.py' file. The docker image file was tested on two Linux machines and have not yet tested on Windows machine. I will reease the updates to fix potential issues.
+For users do not know how to use Docker image, I do not provide detailed instructions for now. However, this page will be updated to provide more support.
 
+### Train
+```bash
+python train_cropsize.py -d=cuda:0 -cz=512 -scale=1 -e=15 -b=4
+```
+This is one example code that I used to train my model. If you do not have large enough GPU memory, you may reduce the batch size (e.g. -b=2), or you may reduce the crop size (e.g. -cz=256). However, the model may not have the same performance. 
+The user can also use help arguement to check all the argments available for this training function.
 
 ## Description
 
