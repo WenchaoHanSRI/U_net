@@ -5,7 +5,7 @@ Feel free to play/modify the code for your own purpose.
 
 - [Quick start](#quick-start)
   - [Data](#data)
-  - [Without Docker](#without-docker)
+  - [Without Docker](#without-docker) 
   - [With Docker](#with-docker)
 - [Description](#description)
 - [Usage](#usage)
@@ -15,13 +15,15 @@ Feel free to play/modify the code for your own purpose.
 - [Weights & Biases](#weights--biases)
 - [Pretrained model](#pretrained-model)
 
-## Data
+
+
+## Quick start
+
+### Data
 The retinal fundas dataset can be downloaded:
 (https://figshare.com/ndownloader/files/34969398)
 
 The dataset includes 800 2048x2048 images in total: 600 training dataset and 200 testing dataset. 
-
-## Quick start
 
 ### Without Docker
 
@@ -29,13 +31,26 @@ The dataset includes 800 2048x2048 images in total: 600 training dataset and 200
 ```bash
 pip install -r requirements.txt
 ```
-2. Before running the code, place the testing image under the master folder within
-'/data/testimgsall' and corresponding masks in '/data/testmasksall' 
 
-3. Download the data and run training:
+2. Place the testing image under the master folder within
+'/data/testimgsall' and corresponding masks in '/data/testmasksall' to perform segmentation. 
+Two sample images are placed in the folder already, you can place more images of the downloaded data in the same folder.
+
+3. Download the pre-trained model and put the model in the master directory:(https://figshare.com/ndownloader/files/34969398)
+
+
+3. Download the data and run inferencing:
 ```bash
 python validate.py
 ```
+The user should expect a link print out from the command window, which brings to the Weights&Biases website and you can review your results there.
+
+
+4. Alternatively, user can run without wandb module (i.e. Weights&Biases):
+```bash
+python validate_folder.py
+```
+The mean error metrics will be printed out in the command window, and the predicted mask image will save in the 'prediction' folder, which will be automatically created.
 
 ### With Docker
 
@@ -74,19 +89,7 @@ optional arguments:
 
 By default, the `scale` is 0.5, so if you wish to obtain better results (but use more memory), set it to 1.
 
-Automatic mixed precision is also available with the `--amp` flag. [Mixed precision](https://arxiv.org/abs/1710.03740) allows the model to use less memory and to be faster on recent GPUs by using FP16 arithmetic. Enabling AMP is recommended.
-
-
 ### Prediction
-
-
-
-## Weights & Biases
-
-The training progress can be visualized in real-time using [Weights & Biases](https://wandb.ai/).  Loss curves, validation curves, weights and gradient histograms, as well as predicted masks are logged to the platform.
-
-When launching a training, a link will be printed in the console. Click on it to go to your dashboard. If you have an existing W&B account, you can link it
- by setting the `WANDB_API_KEY` environment variable. If not, it will create an anonymous run which is automatically deleted after 7 days.
 
 
 ## Pretrained model
