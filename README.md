@@ -1,4 +1,4 @@
-# U_net
+# U_net for retinal fundus segmentation
 
 The repository is specifically build for a task for personal pupose. The model is trained for semantic segmentation for retinal fundus images.
 Feel free to play/modify the code for your own purpose.
@@ -19,6 +19,8 @@ Feel free to play/modify the code for your own purpose.
 The retinal fundas dataset can be downloaded:
 (https://figshare.com/ndownloader/files/34969398)
 
+The dataset includes 800 2048x2048 images in total: 600 training dataset and 200 testing dataset. 
+
 ## Quick start
 
 ### Without Docker
@@ -27,8 +29,10 @@ The retinal fundas dataset can be downloaded:
 ```bash
 pip install -r requirements.txt
 ```
+2. Before running the code, place the testing image under the master folder within
+'/data/testimgsall' and corresponding masks in '/data/testmasksall' 
 
-2. Download the data and run training:
+3. Download the data and run training:
 ```bash
 python validate.py
 ```
