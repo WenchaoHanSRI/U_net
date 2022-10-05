@@ -77,7 +77,7 @@ docker run -it -rm -v c:/Unet_project/:/home/user/U-net/data wenchao_final bash
 In this example, your path for the test images are 'c:/Unet_project/'. User may change path based on where the test image files are saved.
 
 3. get in the container:
-```bash
+```console
 docker run --rm -it --entrypoint "/bin/bash" --memory=30g --shm-size=30g --memory-swap=15g  -v c:/Unet_project/:/home/user/U-Net/data wenchao_final
 ```
 
