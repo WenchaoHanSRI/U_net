@@ -1,6 +1,6 @@
 # U_net for retinal fundus segmentation
 
-The repository is specifically build for a task for personal pupose. The model is trained for semantic segmentation for retinal fundus images.
+The repository is specifically build for a task for personal purpose. The model is trained for semantic segmentation for retinal fundus images.
 Feel free to play/modify the code for your own purpose.
 
 - [Quick-start](#quick-start)
