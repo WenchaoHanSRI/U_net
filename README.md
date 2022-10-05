@@ -14,7 +14,7 @@ Feel free to play/modify the code for your own purpose.
 
 
 ## Quick-start
-Using the two notebook files as a demo to 1) inspect the data (https://github.com/WenchaoHanSRI/U_net/blob/main/Inspect_dataset.ipynb) 2) using pre-trained weights to perform the prediction and evaluate the model performanace (https://github.com/WenchaoHanSRI/U_net/blob/main/Validation.ipynb). NOTE: for validation, the notebook only includes 2 image smaples. The user may upload more samples in the directory where the samples save in the Colab to run the experiments.
+Using the two notebook files as a demo to 1) inspect the data (https://github.com/WenchaoHanSRI/U_net/blob/main/Inspect_dataset.ipynb) 2) using pre-trained weights to perform the prediction and evaluate the model performance (https://github.com/WenchaoHanSRI/U_net/blob/main/Validation.ipynb). NOTE: for validation, the notebook only includes 2 image smaples. The user may upload more samples in the directory where the samples save in the Colab to run the experiments.
 
 ## Data
 The retinal fundas dataset can be downloaded:
