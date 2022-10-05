@@ -9,11 +9,6 @@ Feel free to play/modify the code for your own purpose.
   - [Without Docker](#without-docker) 
   - [With Docker](#with-docker)
 - [Train](#Train)
-
-- [Usage](#usage)
-  - [Docker](#docker)
-  - [Training](#training)
-  - [Prediction](#prediction)
 - [Weights & Biases](#weights--biases)
 - [Pretrained model](#pretrained-model)
 
@@ -63,6 +58,30 @@ python validate_folder.py
 The mean error metrics will be printed out in the command window, and the predicted mask image will save in the 'prediction' folder, which will be automatically created.
 
 ### With Docker
+The docker file can be downloaded:
+(https://drive.google.com/file/d/1GEaAb3H6Wl-bcTD5XRjDA6SbGOSvY-3e/view?usp=sharing)
+
+1. load the docker file:
+```
+docker load < wenchao_docker_final.tar.xz
+```
+2. mount the directory that holds the test image files in the same format as my data directory.
+example code:
+'''
+docker run -it -rm -v c:/Unet_project/:/home/user/U-net/data wenchao_final bash
+'''
+In this example, your path for the test images are 'c:/Unet_project/'. User may change path based on where the test image files are saved.
+
+3. get in the container:
+'''
+docker run --rm -it --entrypoint "/bin/bash" --memory=30g --shm-size=30g --memory-swap=15g  -v c:/Unet_project/:/home/user/U-Net/data wenchao_final
+'''
+
+4. run the python file:
+'''
+python validate.py
+'''
+
 The user can also download the Docker image file to run the 'validation.py' file. The docker image file was tested on two Linux machines and have not yet tested on Windows machine. I will reease the updates to fix potential issues.
 For users do not know how to use Docker image, I do not provide detailed instructions for now. However, this page will be updated to provide more support.
 
@@ -72,17 +91,6 @@ python train_cropsize.py -d=cuda:0 -cz=512 -scale=1 -e=15 -b=4
 ```
 This is one example code that I used to train my model. If you do not have large enough GPU memory, you may reduce the batch size (e.g. -b=2), or you may reduce the crop size (e.g. -cz=256). However, the model may not have the same performance. 
 The user can also use help arguement to check all the argments available for this training function.
-
-
-
-
-## Usage
-**Note : Use Python 3.6 or newer**
-
-### Docker
-(https://drive.google.com/file/d/1GEaAb3H6Wl-bcTD5XRjDA6SbGOSvY-3e/view?usp=sharing)
-
-### Training
 
 ```console
 > python train.py -h
@@ -105,34 +113,9 @@ optional arguments:
   --amp                 Use mixed precision
 ```
 
-By default, the `scale` is 0.5, so if you wish to obtain better results (but use more memory), set it to 1.
-
-### Prediction
-
-
 ## Pretrained model
 A [pretrained model](https://github.com/milesial/Pytorch-UNet/releases/tag/v3.0) is available for the Carvana dataset. It can also be loaded from torch.hub:
 
-```python
-net = torch.hub.load('milesial/Pytorch-UNet', 'unet_carvana', pretrained=True, scale=0.5)
-```
-Available scales are 0.5 and 1.0.
-
-
-
-
-You can also download it using the helper script:
-
-```
-bash scripts/download_data.sh
-```
-
-The input images and target masks should be in the `data/imgs` and `data/masks` folders respectively (note that the `imgs` and `masks` folder should not contain any sub-folder or any other files, due to the greedy data-loader). For Carvana, images are RGB and masks are black and white.
-
-You can use your own dataset as long as you make sure it is loaded properly in `utils/data_loading.py`.
-
-
----
 
 Original paper by Olaf Ronneberger, Philipp Fischer, Thomas Brox:
 
