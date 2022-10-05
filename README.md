@@ -4,9 +4,9 @@ The repository is specifically build for a task for personal pupose. The model i
 Feel free to play/modify the code for your own purpose.
 
 - [Quick-start](#quick-start)
+- [Data](#data)
 - [Description](#description)
 - [Validation](#validation)
-  - [Data](#data)
   - [Pretrained model](#pretrained-model)
   - [Without Docker](#without-docker) 
   - [With Docker](#with-docker)
@@ -15,6 +15,10 @@ Feel free to play/modify the code for your own purpose.
 
 ## Quick-start
 Using the two notebook files as a demo to 1) inspect the data (https://github.com/WenchaoHanSRI/U_net/blob/main/Inspect_dataset.ipynb) 2) using pre-trained weights to perform the prediction and evaluate the model performanace (https://github.com/WenchaoHanSRI/U_net/blob/main/Validation.ipynb).
+
+## Data
+The retinal fundas dataset can be downloaded:
+(https://figshare.com/ndownloader/files/34969398)
 
 ## Description
 This package is a U-net package for semantic segmentaiton for the retinal dataset. This code is modified from the git repository: (https://github.com/milesial/Pytorch-UNet)
@@ -28,9 +32,7 @@ The modifications details are below:
 
 ## Validation
 
-### Data
-The retinal fundas dataset can be downloaded:
-(https://figshare.com/ndownloader/files/34969398)
+
 
 The dataset includes 800 2048x2048 images in total: 600 training dataset and 200 testing dataset.
 
