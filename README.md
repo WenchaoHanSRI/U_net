@@ -3,6 +3,7 @@
 The repository is specifically build for a task for personal pupose. The model is trained for semantic segmentation for retinal fundus images.
 Feel free to play/modify the code for your own purpose.
 
+- [Quick-start](#quick-start)
 - [Description](#description)
 - [Validation](#validation)
   - [Data](#data)
@@ -11,6 +12,9 @@ Feel free to play/modify the code for your own purpose.
   - [With Docker](#with-docker)
 - [Train](#Train)
 
+
+## Quick-start
+Using the two notebook files as a demo to 1) inspect the data, 2) using pre-trained weights to perform the prediction and evaluate the model performanace.
 
 ## Description
 This package is a U-net package for semantic segmentaiton for the retinal dataset. This code is modified from the git repository: (https://github.com/milesial/Pytorch-UNet)
