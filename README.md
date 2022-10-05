@@ -28,7 +28,11 @@ The modifications details are below:
 The retinal fundas dataset can be downloaded:
 (https://figshare.com/ndownloader/files/34969398)
 
-The dataset includes 800 2048x2048 images in total: 600 training dataset and 200 testing dataset. 
+The dataset includes 800 2048x2048 images in total: 600 training dataset and 200 testing dataset. \
+
+### Pretrained-model
+
+(https://drive.google.com/file/d/18jRivGhFium-URAhMMHTV-js-MsBUMzR/view?usp=sharing)
 
 ### Without Docker
 
