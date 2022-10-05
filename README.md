@@ -6,11 +6,11 @@ Feel free to play/modify the code for your own purpose.
 - [Description](#description)
 - [Quick start](#quick-start)
   - [Data](#data)
+  - [Pretrained model](#pretrained-model)
   - [Without Docker](#without-docker) 
   - [With Docker](#with-docker)
 - [Train](#Train)
-- [Weights & Biases](#weights--biases)
-- [Pretrained model](#pretrained-model)
+
 
 ## Description
 This package is a U-net package for semantic segmentaiton for the retinal dataset. This code is modified from the git repository: (https://github.com/milesial/Pytorch-UNet)
