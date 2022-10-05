@@ -67,7 +67,8 @@ The mean error metrics will be printed out in the command window, and the predic
 
 ### With Docker
 The docker file can be downloaded:
-(https://drive.google.com/file/d/1zbAVBKpBfNLdBN1amB066UXTloDjqvBF/view?usp=sharing), new version not yet tested
+(https://drive.google.com/file/d/1zbAVBKpBfNLdBN1amB066UXTloDjqvBF/view?usp=sharing) new version not yet tested;
+
 (https://drive.google.com/file/d/1GEaAb3H6Wl-bcTD5XRjDA6SbGOSvY-3e/view?usp=sharing)
 
 1. load the docker file:
