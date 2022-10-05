@@ -4,7 +4,7 @@ The repository is specifically build for a task for personal pupose. The model i
 Feel free to play/modify the code for your own purpose.
 
 - [Description](#description)
-- [Quick start](#quick-start)
+- [Validation](#validation)
   - [Data](#data)
   - [Pretrained model](#pretrained-model)
   - [Without Docker](#without-docker) 
@@ -22,7 +22,7 @@ The modifications details are below:
 5. A note book file is created using google Colab. Please make sure you have more than 2G free space to run the code in Colab as it will automatically download the dataset to the clouse drive. 
 
 
-## Quick start
+## Validation
 
 ### Data
 The retinal fundas dataset can be downloaded:
