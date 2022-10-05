@@ -41,7 +41,7 @@ pip install -r requirements.txt
 '/data/testimgsall' and corresponding masks in '/data/testmasksall' to perform segmentation. 
 Two sample images are placed in the folder already, you can place more images of the downloaded data in the same folder.
 
-3. Download the pre-trained model and put the model in the master directory:([https://figshare.com/ndownloader/files/34969398](https://drive.google.com/file/d/18jRivGhFium-URAhMMHTV-js-MsBUMzR/view?usp=sharing))
+3. Download the pre-trained model and put the model in the master directory:(https://drive.google.com/file/d/18jRivGhFium-URAhMMHTV-js-MsBUMzR/view?usp=sharing)
 
 
 4. Download the data and run inferencing:
@@ -112,13 +112,3 @@ optional arguments:
                         Percent of the data that is used as validation (0-100)
   --amp                 Use mixed precision
 ```
-
-## Pretrained model
-A [pretrained model](https://github.com/milesial/Pytorch-UNet/releases/tag/v3.0) is available for the Carvana dataset. It can also be loaded from torch.hub:
-
-
-Original paper by Olaf Ronneberger, Philipp Fischer, Thomas Brox:
-
-[U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
-
-![network architecture](https://i.imgur.com/jeDVpqF.png)
