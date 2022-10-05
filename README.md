@@ -14,7 +14,7 @@ Feel free to play/modify the code for your own purpose.
 
 
 ## Quick-start
-Using the two notebook files as a demo to 1) inspect the data, 2) using pre-trained weights to perform the prediction and evaluate the model performanace.
+Using the two notebook files as a demo to 1) inspect the data (https://github.com/WenchaoHanSRI/U_net/blob/main/Inspect_dataset.ipynb) 2) using pre-trained weights to perform the prediction and evaluate the model performanace (https://github.com/WenchaoHanSRI/U_net/blob/main/Validation.ipynb).
 
 ## Description
 This package is a U-net package for semantic segmentaiton for the retinal dataset. This code is modified from the git repository: (https://github.com/milesial/Pytorch-UNet)
