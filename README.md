@@ -19,6 +19,7 @@ Using the two notebook files as a demo to 1) inspect the data (https://github.co
 ## Data
 The retinal fundas dataset can be downloaded:
 (https://figshare.com/ndownloader/files/34969398)
+The dataset includes 800 2048x2048 images in total: 600 training dataset and 200 testing dataset.
 
 ## Description
 This package is a U-net package for semantic segmentaiton for the retinal dataset. This code is modified from the git repository: (https://github.com/milesial/Pytorch-UNet)
@@ -32,9 +33,6 @@ The modifications details are below:
 
 ## Validation
 
-
-
-The dataset includes 800 2048x2048 images in total: 600 training dataset and 200 testing dataset.
 
 ### Pretrained-model
 
