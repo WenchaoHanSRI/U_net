@@ -22,11 +22,12 @@ The retinal fundas dataset can be downloaded:
 The dataset includes 800 2048x2048 images in total: 600 training dataset and 200 testing dataset.
 
 ## Description
-This package is a U-net package for semantic segmentaiton for the retinal dataset. This code is modified from the git repository: (https://github.com/milesial/Pytorch-UNet)
+This package is a U-net package for semantic segmentation for the retinal dataset. This code is built from a public U-net framework. 
+
 The modifications details are below:
 1. Fixed the bug in the dataloader to load the 24-bit mask properly. 
-2. Added color autmentation on top of the original code for training. Specifically, added color augmentation as the retinal fundus images varies largely in brightness, contrast, and hue. The rotation augmentation did not implemented yet. Please note: do not implment geometric augmentation directly in the transform funtion, this will not apply to masks. I will update this function later.
-3. Added random corpping specifically for my purpose of training. The trained model can directly used for inferencing for the full size image. I need to train the model at full resolution as the vessel structure is very thin. The original code downsampled images, which does not apply to my case. The user can still use the scale parameter to downsample the image.
+2. Added color augmentation on top of the original code for training. Specifically, added color augmentation as the retinal fundus images varies largely in brightness, contrast, and hue. The rotation augmentation did not implemented yet. Please note: do not implement geometric augmentation directly in the transform function, this will not apply to masks. I will update this function later.
+3. Added random corping specifically for my purpose of training. The trained model can directly used for inferencing for the full size image. I need to train the model at full resolution as the vessel structure is very thin. The original code downsampled images, which does not apply to my case. The user can still use the scale parameter to downsample the image.
 4. Reimplemented the validation function with four more error metrics. The predict.py function in the original package has bugs which I do not have time to fix. 
 5. A note book file is created using google Colab. Please make sure you have more than 2G free space to run the code in Colab as it will automatically download the dataset to the clouse drive. 
 
