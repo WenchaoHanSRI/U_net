@@ -24,7 +24,7 @@ https://github.com/WenchaoHanSRI/U_net/blob/main/Inspect_dataset.ipynb.
 NOTE: for validation, the notebook only includes 2 image samples. The user may upload more samples in the directory where the samples save in the Colab to run the experiments.
 
 ## Data
-The retinal fundas dataset can be downloaded:
+The retinal fundus dataset can be downloaded:
 (https://figshare.com/ndownloader/files/34969398)
 The dataset includes 800 2048x2048 images in total: 600 training dataset and 200 testing dataset.
 
