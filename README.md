@@ -66,23 +66,23 @@ The docker file can be downloaded:
 (https://drive.google.com/file/d/1GEaAb3H6Wl-bcTD5XRjDA6SbGOSvY-3e/view?usp=sharing)
 
 1. load the docker file:
-```
+```console
 docker load < wenchao_docker_final.tar.xz
 ```
 2. mount the directory that holds the test image files in the same format as my data directory.
 example code:
-'''
+'''console
 docker run -it -rm -v c:/Unet_project/:/home/user/U-net/data wenchao_final bash
 '''
 In this example, your path for the test images are 'c:/Unet_project/'. User may change path based on where the test image files are saved.
 
 3. get in the container:
-'''
+'''bash
 docker run --rm -it --entrypoint "/bin/bash" --memory=30g --shm-size=30g --memory-swap=15g  -v c:/Unet_project/:/home/user/U-Net/data wenchao_final
 '''
 
 4. run the python file:
-'''
+'''bash
 python validate.py
 '''
 
@@ -90,6 +90,8 @@ The user can also download the Docker image file to run the 'validation.py' file
 For users do not know how to use Docker image, I do not provide detailed instructions for now. However, this page will be updated to provide more support.
 
 ### Train
+You can directly run the code below as it uses the data samples in '/data/imgs/' and '/data/masks/', which includes 3 samples. To train the model, please use the full training dataset and place the images and masks in the above mentioned folders without changing the folder name.
+
 ```bash
 python train_cropsize.py -d=cuda:0 -cz=512 -scale=1 -e=15 -b=4
 ```
