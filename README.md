@@ -66,7 +66,7 @@ Two sample images are placed in the folder already, you can place more images of
 python validate.py
 ```
 
-### Weights-&-Biases
+### Weights & Biases
 The user should expect a link print out from the command window, which brings to the Weights&Biases website and you can review your results there.
 
 
