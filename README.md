@@ -9,7 +9,7 @@ Feel free to play/modify the code for your own purpose.
 - [Validation](#validation)
   - [Pretrained model](#pretrained-model)
   - [Without Docker](#without-docker)
-  - [Weights-&-Biases](#Weights-&-Biases)
+  - [Weights & Biases](#Weights-&-Biases)
   - [With Docker](#with-docker)
 - [Train](#Train)
 
