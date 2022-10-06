@@ -9,7 +9,7 @@ Feel free to play/modify the code for your own purpose.
 - [Validation](#validation)
   - [Pretrained model](#pretrained-model)
   - [Without Docker](#without-docker)
-  - [Weights & Biases](#Weights & Biases)
+  - [Weights-&-Biases](#Weights-&-Biases)
   - [With Docker](#with-docker)
 - [Train](#Train)
 
@@ -66,7 +66,7 @@ Two sample images are placed in the folder already, you can place more images of
 python validate.py
 ```
 
-### Weights & Biases
+### Weights-&-Biases
 The user should expect a link print out from the command window, which brings to the Weights&Biases website and you can review your results there.
 
 
