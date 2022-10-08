@@ -95,18 +95,16 @@ In this example, the path for the test samples is 'c:/Unet_project/'. Within the
 
 3. run the python file:
 
-switch to work directory
+switch to work directory:
 ```bash
 cd U-Net
 ```
 
-run the python code
+run the python code:
 ```bash
 python validate.py
 ```
 
-The user can also download the Docker image file to run the 'validation.py' file. The docker image file was tested on two Linux machines and have not yet tested on Windows machine. I will reease the updates to fix potential issues.
-For users do not know how to use Docker image, I do not provide detailed instructions for now. However, this page will be updated to provide more support.
 
 ### Train
 You can directly run the code below as it uses the data samples in '/data/imgs/' and '/data/masks/', which includes 3 samples. To train the model, please use the full training dataset and place the images and masks in the above mentioned folders without changing the folder name.
