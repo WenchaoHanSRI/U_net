@@ -88,9 +88,9 @@ docker load < wenchao_docker_final.tar.xz
 ```
 2. mount the directory that holds the test image files in the same format as my data directory.
 ```console
-docker run --rm -it --entrypoint "/bin/bash" --memory=30g --shm-size=30g --memory-swap=15g  -v c:/Unet_project/:/home/user/U-Net/data wenchao_final
+docker run --rm -it --entrypoint "/bin/bash" --memory=30g --shm-size=30g --memory-swap=15g  -v E:/Test_docker/:/home/user/U-Net/data wenchao_final
 ```
-In this example, the path for the test samples is 'c:/Unet_project/'. Within the path, make sure the images are in 'testimgsall' subfolder and the masks are in 'testmasksall' folder. The corresponding mount location in the container is 'home/user/U-Net/data', which is pre-defined and should not be changed.
+In this example, the path for the test samples is 'E:/Test_docker/'. Within the path, make sure the images are in 'testimgsall' subfolder and the masks are in 'testmasksall' folder. The corresponding mount location in the container is 'home/user/U-Net/data', which is pre-defined and should not be changed.
 
 
 ![image](https://user-images.githubusercontent.com/60233311/194725882-4ca956ac-f2b3-4b8f-95be-042cf65af88d.png)
