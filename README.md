@@ -122,6 +122,7 @@ The results view in the browser:
 ![image](https://user-images.githubusercontent.com/60233311/194727560-fd9d0747-d324-40d0-89af-95acafcabe63.png)
 ![image](https://user-images.githubusercontent.com/60233311/194727694-03aa26ed-fc06-438b-90db-d217a4308eb6.png)
 ![image](https://user-images.githubusercontent.com/60233311/194727737-4021894f-ca13-4a43-ba77-bd5ab6047735.png)
+![image](https://user-images.githubusercontent.com/60233311/194727826-0fee3071-b73b-42b1-9ed4-47ab7562061b.png)
 
 
 ### Train
