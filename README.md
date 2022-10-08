@@ -112,6 +112,8 @@ python validate.py
 
 
 ### Train
+Currently, the train function can only run by configuring the python environment using the requirement.txt file. The docker option is not available for training at the moment. This will be updated soon.
+
 You can directly run the code below as it uses the data samples in '/data/imgs/' and '/data/masks/', which includes 3 samples. To train the model, please use the full training dataset and place the images and masks in the above mentioned folders without changing the folder name.
 
 ```bash
