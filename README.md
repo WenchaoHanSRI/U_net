@@ -120,6 +120,7 @@ The averaged error metrics are printed out in the shell. The detailed report can
 
 The results view in the browser:
 ![image](https://user-images.githubusercontent.com/60233311/194727560-fd9d0747-d324-40d0-89af-95acafcabe63.png)
+![image](https://user-images.githubusercontent.com/60233311/194727694-03aa26ed-fc06-438b-90db-d217a4308eb6.png)
 
 
 ### Train
