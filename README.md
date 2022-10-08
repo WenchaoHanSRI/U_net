@@ -37,7 +37,7 @@ The modifications details are below:
 2. Added color augmentation in the function as the retinal fundus images varies largely in brightness, contrast, and hue. The rotation augmentation was not implemented yet. Please note: do not implement geometric augmentation directly using the transform function in the code, this will not apply to masks. I will update this function later.
 3. Added random cropping specifically for my purpose of training. The trained model can be directly used for inferencing for the full size image. I need to train the model at full resolution as the vessel structure is very thin. The public U-net code downsampled images and masks before being fed into the model, which can result in missing thin vessel structures in both images and masks. The user can still use the scale parameter to downsample the image before being fed into the network if your images/masks do not have very small structures that may disappear whnen downsampling and upsampling.
 4. Reimplemented the validation function with four more error metrics. The predict.py function in the original package has bugs which I do not have time to fix. 
-5. A notebook file is created using google Colab. Please make sure you have more than 2G free space to run the code in Colab as it will automatically download the dataset to the clouse drive. 
+5. A notebook file is created using google Colab. Please make sure you have more than 2G free space to run the code in Colab as it will automatically download the dataset to the cloud drive. 
 
 
 ## Validation
