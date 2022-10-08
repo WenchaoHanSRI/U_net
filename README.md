@@ -82,11 +82,11 @@ The docker file can be downloaded:
 
 (https://drive.google.com/file/d/1GEaAb3H6Wl-bcTD5XRjDA6SbGOSvY-3e/view?usp=sharing) old version and tested.
 
-1. load the docker file:
+1. Load the docker file:
 ```console
 docker load < wenchao_docker_final.tar.xz
 ```
-2. mount the directory that holds the test image files in the same format as my data directory.
+2. Run the docker image and mount the directory that holds the test image files:
 ```console
 docker run --rm -it --entrypoint "/bin/bash" --memory=30g --shm-size=30g --memory-swap=15g  -v E:/Test_docker/:/home/user/U-Net/data wenchao_final
 ```
@@ -98,7 +98,7 @@ In this example, the path for the test samples is 'E:/Test_docker/'. Within the 
 
 'wenchao_final' is the un-compressed image name. Please double check this after step 1, when the up-compressed image name is printed. You may change this accordingly.
 
-3. run the python file:
+3. Run the python file:
 
 switch to work directory:
 ```bash
@@ -109,6 +109,14 @@ run the python code:
 ```bash
 python validate.py
 ```
+
+4. Review the results:
+
+
+The averaged error metrics are printed out in the shell. The detailed report can be accessed by the printed link using any web browser.
+
+
+![image](https://user-images.githubusercontent.com/60233311/194726599-acf3b4cf-14ef-4e1e-bb82-f12ba56bcb2c.png)
 
 
 ### Train
