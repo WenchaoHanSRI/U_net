@@ -119,10 +119,9 @@ The averaged error metrics are printed out in the shell. The detailed report can
 ![image](https://user-images.githubusercontent.com/60233311/194726599-acf3b4cf-14ef-4e1e-bb82-f12ba56bcb2c.png)
 
 
-The results view in the browser:
-Each plot shows the results for each error metric. Each point value on the plot is the result for each test image sample:
+Each plot shows the results for each error metric; each point value on the plot is the result for each test image sample.
 ![image](https://user-images.githubusercontent.com/60233311/194727560-fd9d0747-d324-40d0-89af-95acafcabe63.png)
-The test image sample, ground truth mask, and predicted mask can also be found in the report:
+The test image sample, ground truth mask, and predicted mask are shown in the report:
 ![image](https://user-images.githubusercontent.com/60233311/194727694-03aa26ed-fc06-438b-90db-d217a4308eb6.png)
 ![image](https://user-images.githubusercontent.com/60233311/194727737-4021894f-ca13-4a43-ba77-bd5ab6047735.png)
 The overall performance for all the tested samples is reported by the averaged error metrics:
