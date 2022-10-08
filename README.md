@@ -118,6 +118,9 @@ The averaged error metrics are printed out in the shell. The detailed report can
 
 ![image](https://user-images.githubusercontent.com/60233311/194726599-acf3b4cf-14ef-4e1e-bb82-f12ba56bcb2c.png)
 
+The results view in the browser:
+![image](https://user-images.githubusercontent.com/60233311/194727560-fd9d0747-d324-40d0-89af-95acafcabe63.png)
+
 
 ### Train
 Currently, the train function can only run by configuring the python environment using the requirement.txt file. The docker option is not available for training at the moment. This will be updated soon.
