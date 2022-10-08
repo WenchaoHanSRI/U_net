@@ -91,9 +91,6 @@ docker load < wenchao_docker_final.tar.xz
 docker run --rm -it --entrypoint "/bin/bash" --memory=30g --shm-size=30g --memory-swap=15g  -v c:/Unet_project/:/home/user/U-Net/data wenchao_final
 ```
 In this example, the path for the test samples is 'c:/Unet_project/'. Within the path, make sure the images are in 'testimgsall' subfolder and the masks are in 'testmasksall' folder. The corresponding mount location in the container is 'home/user/U-Net/data', which is pre-defined and should not be changed.
-
-https://github.com/WenchaoHanSRI/U_net/issues/2
-
 'wenchao_final' is the un-compressed image name. Please double check this after step 1, when the up-compressed image name is printed. You may change this accordingly.
 
 3. run the python file:
