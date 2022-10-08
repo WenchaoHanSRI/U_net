@@ -93,7 +93,7 @@ docker run --rm -it --entrypoint "/bin/bash" --memory=30g --shm-size=30g --memor
 In this example, the path for the test samples is 'E:/Test_docker/'. Within the path, make sure the images are in 'testimgsall' subfolder and the masks are in 'testmasksall' folder. The corresponding mount location in the container is 'home/user/U-Net/data', which is pre-defined and should not be changed.
 
 
-![image](https://user-images.githubusercontent.com/60233311/194725882-4ca956ac-f2b3-4b8f-95be-042cf65af88d.png)
+![image](https://user-images.githubusercontent.com/60233311/194726137-98563f27-557b-421f-b363-23276a9b8a77.png)
 
 
 'wenchao_final' is the un-compressed image name. Please double check this after step 1, when the up-compressed image name is printed. You may change this accordingly.
