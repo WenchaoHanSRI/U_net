@@ -13,7 +13,7 @@ from tqdm import tqdm
 
 from utils.data_loading import BasicDataset
 from utils.dice_score import dice_loss
-from evaluate_output import evaluate_output
+from evaluate import evaluate
 from unet import UNet
 
 
@@ -150,7 +150,7 @@ def train_net(net,
                             histograms['Weights/' + tag] = wandb.Histogram(value.data.cpu())
                             histograms['Gradients/' + tag] = wandb.Histogram(value.grad.data.cpu())
 
-                        val_score = evaluate_output(net, val_loader, device)
+                        val_score = evaluate(net, val_loader, device)
                         scheduler.step(val_score)
 
                         logging.info('Validation Dice score: {}'.format(val_score))
