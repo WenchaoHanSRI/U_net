@@ -21,7 +21,8 @@ Using the two notebook files as a demo to
 https://github.com/WenchaoHanSRI/U_net/blob/main/Inspect_dataset.ipynb. 
 
 2) inspect the data with a demo for model training:
-https://github.com/WenchaoHanSRI/U_net/blob/main/Inspect_dataset_with_train.ipynb
+https://github.com/WenchaoHanSRI/U_net/blob/main/Inspect_dataset_with_train.ipynb.
+
 Note: The training code is for demo purposes. Please make sure the GPU is available to run the code (see the GPU setup guide in this notebook). The training code used default parameters, which were not used to create the pre-trained model that is provided in this repository.
 
 3) using pre-trained weights to perform the prediction and evaluate the model performance: https://github.com/WenchaoHanSRI/U_net/blob/main/Validation.ipynb. 
