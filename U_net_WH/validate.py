@@ -5,7 +5,7 @@ import torch
 import wandb
 from torch.utils.data import DataLoader
 
-from utils.data_loading import BasicDataset, CarvanaDataset
+from utils.data_loading import BasicDataset
 from evaluate_output import evaluate_output
 from unet import UNet
 from torchvision import transforms
