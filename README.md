@@ -136,7 +136,7 @@ The overall performance for all the tested samples is reported by the averaged e
 ### Train
 Currently, the train function can only run by configuring the python environment using the requirement.txt file. The docker option is not available for training at the moment. This will be updated soon.
 
-You can directly run the code below as it uses the data samples in '/data/imgs/' and '/data/masks/', which includes 3 samples. To train the model, please use the full training dataset and place the images and masks in the above mentioned folders without changing the folder name.
+You can directly run the code below as it uses the data samples in '/data/imgs/' and '/data/masks/', which includes 10 samples. To train the model, please use the full training dataset and place the images and masks in the above mentioned folders without changing the folder name.
 
 ```bash
 python train_cropsize.py -d=cuda:0 -cz=512 -scale=1 -e=15 -b=4
