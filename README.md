@@ -146,8 +146,11 @@ The user can also use the help argument to check all the arguments available for
 
 ```console
 > python train_crop.py -h
-usage: train.py [-h] [--epochs E] [--batch-size B] [--learning-rate LR]
-                [--load LOAD] [--scale SCALE] [--validation VAL] [--amp]
+usage: train_cropsize.py [-h] [--epochs E] [--batch-size B]
+                         [--learning-rate LR] [--load LOAD] [--scale SCALE]
+                         [--validation VAL] [--amp] [--bilinear]
+                         [--classes CLASSES] [--device DEVICE]
+                         [--patience PATIENCE] [--cropsize CROPSIZE]
 
 Train the UNet on images and target masks
 
@@ -163,4 +166,14 @@ optional arguments:
   --validation VAL, -v VAL
                         Percent of the data that is used as validation (0-100)
   --amp                 Use mixed precision
+  --bilinear            Use bilinear upsampling
+  --classes CLASSES, -c CLASSES
+                        Number of classes
+  --device DEVICE, -d DEVICE
+                        device number
+  --patience PATIENCE, -p PATIENCE
+                        patience of weight decay
+  --cropsize CROPSIZE, -cz CROPSIZE
+                        crop size
+
 ```
