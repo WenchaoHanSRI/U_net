@@ -37,7 +37,7 @@ class BasicDataset(Dataset):
 
         # when input mask is RGB
         if is_mask:
-            if img_ndarray.ndim > 1:
+            if img_ndarray.ndim > 2:
                 img_ndarray = img_ndarray[:, :, 0]
 
 
@@ -117,8 +117,3 @@ class BasicDataset(Dataset):
             'image': img,
             'mask': torch.as_tensor(mask.copy()).long().contiguous()
         }
-
-
-class CarvanaDataset(BasicDataset):
-    def __init__(self, images_dir, masks_dir, scale=1):
-        super().__init__(images_dir, masks_dir, scale, mask_suffix='_mask')
